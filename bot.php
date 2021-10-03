@@ -6,11 +6,11 @@ error_reporting(0);
 set_time_limit(0);
 
 flush();
-$API_KEY = $_ENV['1750917715:AAF2ozYdMbbp0Z7tp_3CfxCoc2uUX6AOYcE']; 
+$API_KEY = $_ENV['2029864763:AAHJEq8vhi1rcqKlUI0EPaItUBScejCgROM']; 
 ##------------------------------##
 define('API_KEY',$API_KEY);
 function bot($method,$datas=[]){
-    $url = "https://api.telegram.org/bot1750917715:AAF2ozYdMbbp0Z7tp_3CfxCoc2uUX6AOYcE/".$method;
+    $url = "https://api.telegram.org/bot2029864763:AAHJEq8vhi1rcqKlUI0EPaItUBScejCgROM/".$method;
     $ch = curl_init();
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
@@ -49,7 +49,7 @@ $chatid = $update->callback_query->message->chat->id;
 $callback_query = $update->callback_query->data;
 $messageid = $update->callback_query->message->message_id;
 $reply = $update->message->reply_to_message->message_id;
-$START_MESSAGE = $_ENV['/start'];
+$START_MESSAGE = $_ENV['start'];
 //===============BENCHAM=============//
 if ($text == "/start") {
 
